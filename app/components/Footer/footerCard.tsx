@@ -17,7 +17,7 @@ const FooterCard = (props: PropsInterface) => {
     let a = <Github className="text-white" fill='#fff' />;
     switch (logo) {
       case "github":
-        a = <div className={styles.logoIconGithub}><Github className="text-white" fill={'#fff'} /></div>;
+        a = <div className={styles.logoIconGithub}><Github className="text-white" fill='#fff' /></div>;
         break;
       case "linkedin":
         a = <div className={styles.linkedIn}><Linkedin className="text-white" fill='#fff'/></div>;
@@ -35,7 +35,7 @@ const FooterCard = (props: PropsInterface) => {
   return (
     <>
       <a href={link}>
-        <div className="flex flex-col justify-center text-center items-center relative gap-4 top-[24%]">
+        <div className="flex flex-col justify-center text-center items-center relative gap-4 h-full">
             {/* <span className="flex justify-center w-12 h-12 rounded-4xl ">{LogoReturn(Logo)}</span> */}
             <div className={` w-fit ${Logo === "linkedin" ? styles.linkedIn : styles.logoIcon} bg-black rounded-4xl p-3`}>
             <span>{LogoReturn(Logo)}</span>
