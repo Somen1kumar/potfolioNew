@@ -46,7 +46,7 @@ const Education = () => {
       </div>
       {/* Experience Card */}
       <div className="flex flex-col py-4 px-8 gap-6 lg:gap-8">
-        <div className=" bg-white flex items-center justify-center px-4 gap-7 flex-wrap lg:gap-5 ">
+        <div className="flex items-center justify-center px-4 gap-7 flex-wrap lg:gap-5 ">
             {EducationLabel.educationList.map((item, index) => (
                 <div className={`${styles.educationCardStyle} rounded-xl max-w-150 w-full  lg:max-w-112.5`} key={index}>
                     <ExperienceCard {...item}/>

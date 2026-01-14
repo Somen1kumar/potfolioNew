@@ -23,7 +23,7 @@ export default function EducationCard(props: PropsInterface) {
     const {degree, institute, percentage, duration} = props
   return (
     <>
-      <div className="w-full bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="w-full border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
 
         {/* Degree */}
         <div className="flex items-start gap-3">

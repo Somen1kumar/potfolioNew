@@ -16,7 +16,7 @@ const  skillCard = (props: PropsInterface) => {
 
   return (
     <>
-      <div className={`${styles.skillsCardStyle} rounded-2xl border border-gray-200 bg-white shadow-sm p-6 sm:p-8 max-w-100 min-w-100 min-h-50 `}>
+      <div className={`${styles.skillsCardStyle} rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-8 max-w-100 min-w-100 min-h-50 `}>
         
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">

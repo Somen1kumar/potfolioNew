@@ -9,7 +9,7 @@ export default function PublicationCard() {
     const { t } = useTranslation();
   return (
     <div className={`max-w-5xl my-4 mx-auto `}>
-      <div className={`${styles.researchCardStyle} relative rounded-3xl border border-gray-200 bg-white shadow-sm p-6 sm:p-10`}>
+      <div className={`${styles.researchCardStyle} relative rounded-3xl border border-gray-200 shadow-sm p-6 sm:p-10`}>
 
         {/* Icon */}
         <div className="flex justify-center mb-6">
