@@ -1,0 +1,54 @@
+
+
+.aboutHeadingStyle {
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+.hideElement {
+    opacity: 0;
+    position: relative;
+    animation: slideElementsToTop 1s ease-in-out forwards;
+    animation-delay: calc(var(--i) * 1000ms);
+}
+.aboutPara {
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: left;
+    padding-bottom: 16px;
+}
+
+.cardContainer {
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 8px 12px 6px rgba(0, 0, 0, .08), 0 4px 4px rgba(0, 0, 0, .12);
+}
+.cardHeading {
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.articlePara {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    padding-bottom: 16px;
+}
+.articleParaBox {
+    border: 1px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 8px 12px 6px #00000014, 0 4px 4px #0000001f;
+    margin-bottom: 16px;
+}
+.cardContainer:hover {
+    /* border: 1px solid #D32F2F; */
+    box-shadow: 0 5px 19px 12px #d32f2f, 0 4px 4px #fff;
+  /* border-color: #D32F2F; */
+}
+@keyframes slideElementsToTop {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+    
+}

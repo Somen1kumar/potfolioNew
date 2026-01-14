@@ -1,0 +1,131 @@
+
+
+
+.video_container {
+    height: 100vh;
+}
+.video_box { 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.leftAnime {
+    width: 60%;
+    height: 100%;
+    background: #D32F2F;
+    position: absolute;
+    z-index: 99;
+    border-radius: 6% 72% 86% 13% / 54% 11% 100% 1%;
+    animation: slideElementToLeft 1.5s linear 1s forwards;
+}
+.rightAnime {
+    width: 60%;
+    height: 100%;
+    right: 9px;
+    background: #FFFBF5;
+    position: absolute;
+    z-index: 99;
+    border-radius: 78% 0% 30% 86% / 89% 63% 0% 5%;
+    animation: slideElementToRight 1.5s linear 1s forwards;
+}
+.welcomeStyle {
+    height: fit-content;
+    /* text-align: center; */
+    position: relative;
+    top: 50%;
+    /* font-size: 32px; */
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFFBF5;
+}
+
+.heroHeadingStyle {
+    color: #FFFBF5;
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 1;
+}
+.heroParaStyle {
+    color: #FFFBF5;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.heroLoadingStyle {
+    opacity: 0;
+    animation: slideElementToTop 1.5s ease-in-out 1s forwards;
+}
+.removeInitialStyle {
+    opacity: 1;
+    animation: slideElementToBottom 1s ease-in-out forwards;
+}
+.updatedHeroStaticStyle {
+    text-shadow: 3px 1px 2px black;
+    opacity: 0;
+    animation: slideElementToTop 1.5s ease-in-out 1s forwards;
+}
+.aboutClassStyle {
+    background: #D32F2F;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 90px;
+    border-radius: 0px 35px;
+    font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #FFFBF5;
+}
+.profileStyle {
+    color: #D32F2F;
+}
+@keyframes slideElementToTopVarient1 {
+    0% {
+        top: 50%;
+    }
+   100% {
+        top: 25%;
+        opacity: 1;
+    }
+}
+@keyframes slideElementToBottom {
+    0% {
+        top: 32%;
+        opacity: 1;
+    }
+    100% {
+        top: 50%;
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes slideElementToTop {
+    0% {
+        top: 50%;
+    }
+   100% {
+        top: 32%;
+        opacity: 1;
+    }
+}
+@keyframes slideElementToLeft {
+    0% {
+    left: 0;
+    }
+    100% {
+        left: -100%;
+        display: none;
+    }
+}
+@keyframes slideElementToRight {
+    0% {
+    right: 0;
+    }
+    100% {
+        right: -100%;
+        display: none;
+    }
+}

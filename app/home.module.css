@@ -1,0 +1,35 @@
+
+
+
+.home_Container {
+    background: linear-gradient(135deg, rgb(10, 10, 10) 0%, rgb(26, 26, 46) 50%, rgb(22, 33, 62) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.homeLogo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 24px auto;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(45deg, rgb(0, 188, 212), rgb(156, 39, 176)); */
+    background-color: transparent;
+    text-align: center;
+    animation: rotater 10s linear infinite;
+}
+.video_container {
+    
+}
+
+@keyframes rotater {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}

@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.test::before{
+  content: "\e900";
+  font-family: 'icomoon';
+  margin-right: 8px;
+  color: #6EE7B7;
+}
