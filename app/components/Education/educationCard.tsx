@@ -23,12 +23,12 @@ export default function EducationCard(props: PropsInterface) {
     const {degree, institute, percentage, duration} = props
   return (
     <>
-      <div className="w-full border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="w-full border border-white/10  rounded-xl p-6 shadow-sm hover:shadow-md">
 
         {/* Degree */}
         <div className="flex items-start gap-3">
-          <GraduationCap className="text-black mt-1" size={22} />
-          <h2 className="text-lg sm:text-xl font-semibold text-black leading-snug">
+          <GraduationCap className=" mt-1" size={22} />
+          <h2 className="text-lg sm:text-xl font-semibold leading-snug">
            {t(degree)}
           </h2>
         </div>
@@ -42,7 +42,7 @@ export default function EducationCard(props: PropsInterface) {
         </div>
 
         {/* Footer */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-5 text-sm text-black">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-5 text-sm ">
 
           {percentage &&<div className="flex items-center gap-2">
             <Percent size={16} />

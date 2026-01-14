@@ -16,12 +16,12 @@ const  skillCard = (props: PropsInterface) => {
 
   return (
     <>
-      <div className={`${styles.skillsCardStyle} rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-8 max-w-100 min-w-100 min-h-50 `}>
+      <div className={`${styles.skillsCardStyle} rounded-2xl border border-white/10 shadow-sm p-6 sm:p-8 max-w-100 min-w-100 min-h-50 `}>
         
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <span className="text-[#d32f2f] text-lg"><Code /></span>
-          <h2 className="text-xl sm:text-2xl font-semibold text-black">
+          <h2 className="text-xl sm:text-2xl font-semibold ">
             {firstHeading} {Lastheading && <span className="text-[#d32f2f]">{Lastheading}</span>}
           </h2>
         </div>
@@ -31,7 +31,7 @@ const  skillCard = (props: PropsInterface) => {
           {languages.map((lang) => (
             <span
               key={lang}
-              className="px-4 py-2 rounded-full border border-gray-300 text-sm sm:text-base  hover:bg-gray-100 transition"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm sm:text-base  hover:bg-gray-50 hover:text-black transition"
             >
               {lang}
             </span>

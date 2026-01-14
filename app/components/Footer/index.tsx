@@ -46,7 +46,7 @@ const Footer = () => {
             <div className={`flex items-center justify-center mx-auto p-4 flex-wrap gap-5 lg:gap-7`}>
                 {ProjectLabels.footerArray.map((card) => {
                     return (
-                        <div key={card.id} className={`${styles.projectCardStyle} w-[80%] h-75 md:w-[30%]`}>
+                        <div key={card.id} className={`${styles.projectCardStyle} w-[80%] h-75 md:w-[30%] border border-white/10`}>
                             <FooterCard {...card} />
                         </div>
                     )

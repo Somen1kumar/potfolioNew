@@ -16,7 +16,7 @@ const Card = (props: PropsInterface) => {
 
   const extraInfoNew = extraInfo.split("{split}");//Generate AI solutions
   return (
-    <div id="card-container" className={`${style.cardContainer} ${style.hideElement}  max-w-115 md:max-w-125 mx-auto lg:mx-0 `}>
+    <div id="card-container" className={`${style.cardContainer} ${style.hideElement}  max-w-115 md:max-w-125 mx-auto lg:mx-0 border border-white/10`}>
       {heading&& <h3
         className={`${style.cardHeading} text-center text-xl font-bold pb-4 `}
       >

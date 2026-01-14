@@ -16,7 +16,7 @@ const Card = (props: PropsInterface) => {
   const { heading, cardPara, techStackUse, githubLink , projectLink} = cardInfo;
 
   return (
-    <div id="projectCard-container" className={`${style.cardContainer} ${style.projectCardStyle} max-w-5xl my-4 mx-auto `}>
+    <div id="projectCard-container" className={`${style.cardContainer} ${style.projectCardStyle} max-w-5xl my-4 mx-auto border border-white/10`}>
       {heading && <h3
         className={`${style.cardHeading} text-center text-xl font-bold pb-4 `}
       >

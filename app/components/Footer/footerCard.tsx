@@ -17,13 +17,13 @@ const FooterCard = (props: PropsInterface) => {
     let a = <Github className="text-white" fill='#fff' />;
     switch (logo) {
       case "github":
-        a = <div className={styles.logoIcon}><Github className="text-white" fill='#fff' /></div>;
+        a = <div className={styles.logoIconGithub}><Github className="text-white" fill={'#fff'} /></div>;
         break;
       case "linkedin":
         a = <div className={styles.linkedIn}><Linkedin className="text-white" fill='#fff'/></div>;
         break;
       default:
-        a = <Mail className="text-white" />;
+        a = <div className={styles.logoMail}><Mail className="text-white" /></div>;
         break;
     }
     return (

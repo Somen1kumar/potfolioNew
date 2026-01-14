@@ -9,7 +9,7 @@ export default function PublicationCard() {
     const { t } = useTranslation();
   return (
     <div className={`max-w-5xl my-4 mx-auto `}>
-      <div className={`${styles.researchCardStyle} relative rounded-3xl border border-gray-200 shadow-sm p-6 sm:p-10`}>
+      <div className={`${styles.researchCardStyle} relative rounded-3xl border border-white/10 shadow-sm p-6 sm:p-10`}>
 
         {/* Icon */}
         <div className="flex justify-center mb-6">
@@ -19,7 +19,7 @@ export default function PublicationCard() {
         </div>
 
         {/* Title */}
-        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black text-center leading-snug">
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center leading-snug">
           {t("A proficient approach to maximize the overall weight in ")}
           <span className="text-[#d32f2f]">
             {t("virtual machine allocation ")}
@@ -30,7 +30,7 @@ export default function PublicationCard() {
         {/* Meta */}
         <p className="mt-4 text-center text-sm sm:text-base text-gray-600">
           {t("Published in ")}
-          <span className="font-semibold text-black">
+          <span className="font-semibold">
             {t("IJRAR, E-ISSN Journals")}
           </span>{" "}
           · <span className="text-[#d32f2f]">{t("March, 2020")}</span>
@@ -43,7 +43,7 @@ export default function PublicationCard() {
 
         {/* Authors */}
         <p className="mt-6 text-center text-sm sm:text-base">
-          <span className="font-semibold text-black">Authors: </span>
+          <span className="font-semibold">Authors: </span>
           <span className="text-[#d32f2f]">
             {t("Somen Kumar, Rahul Kumar Singh,  Sonu Kumar Yadav,  Dr Anwar Basha H")}
           </span>
