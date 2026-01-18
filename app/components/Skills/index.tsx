@@ -1,7 +1,9 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
 import SkillCard from "./skillCard";
+import SkillCardSlider from "./skillCardSlider";
 import styles from "./styles.module.css";
 
 const SkillLabels = {
@@ -48,6 +50,18 @@ const SkillLabels = {
 const Skills  = () => {
 
     const { t } = useTranslation();
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        focusOnSelect: true,
+        centerMode:true,
+        centerPadding: "0px",
+    };
     return (
         <>
         <div>
@@ -57,15 +71,27 @@ const Skills  = () => {
             {t(SkillLabels.skillsHeading)}
             </h2>
 
-            <div className={`flex items-center justify-center mx-auto p-4 flex-wrap gap-5 lg:gap-7`}>
+            <div className={`flex items-center justify-center mx-auto p-4 flex-wrap gap-5 lg:gap-7 lg:hidden`}>
                 {SkillLabels.skillArray.map((skill) => {
                     return (
                         <div key={skill.id}>
                             <SkillCard {...skill} />
-                        </div>
+                        </div>                        
                     )
                 }
                 )}
+            </div>
+            <div className="hidden lg:block p-6 ">
+                <Slider {...settings}>
+                    {SkillLabels.skillArray.map((skill) => {
+                        return (
+                            <div key={skill.id}>
+                                <SkillCardSlider {...skill} />
+                            </div>
+                        )
+                    }
+                    )}
+                </Slider>
             </div>
         </div>
         </>

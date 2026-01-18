@@ -33,3 +33,51 @@ body {
   margin-right: 8px;
   color: #6EE7B7;
 }
+
+.slick-list {
+    padding: 32px 12px;
+}
+.slick-arrow {
+    display: block;
+    left: 0;
+    background: black;
+    top: -20px;
+    right: 100px;
+    left: unset;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+.slick-next {
+  right: 40px;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  opacity: 1;
+  background-color: black;
+}
+
+.slick-slide {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-slide:not(.slick-current) {
+  filter: brightness(0.5);
+}
+
+.slick-slide.slick-current {
+  transform: scale(1.32);
+  position: relative;
+  z-index: 1;
+}
+.slick-slide.slick-current .bordercolor {
+  border: 2px solid #d32f2f;
+}
+
+/* Adjacent cards */
+.slick-slide.slick-active:not(.slick-center) .slide {
+  opacity: 0.7;
+}
