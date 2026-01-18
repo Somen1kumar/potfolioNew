@@ -15,6 +15,8 @@ const mobileVideoType =
 // const mobileVideoType =
 //   "https://drive.google.com/file/d/1EJqP__zdk6zM8gPYBF7nx0FaPwZYoLc7/view?usp=drive_link";
 
+  const mobilefallbackImage = "https://www.nescafe.com/in/sites/default/files/2023-04/Poster_Frame_16_9.jpg";
+
 const Labels = {
     morningFirstLabel: "Good morning!",
     morningSecondLabel: "☀️ We’re delighted to have you.",
@@ -27,7 +29,7 @@ const Labels = {
     heroStaticDesignation: "Software Engineer",
     heroStaticType: "Frontend Developer",
     heroStaticMessage: "A learner by heart and Software Engineer by Profession.",
-    heroStaticMessage2: "Looking forward for an exciting role.",
+    heroStaticMessage2: " Looking forward for an exciting role.",
 
 }
 function Hero(props: PropsInterface) {
@@ -122,6 +124,11 @@ function Hero(props: PropsInterface) {
           // autoPlay
           onLoadedMetadata={handleLoaded}
           muted
+          playsInline
+          webkit-playsinline
+          preload="auto"
+          poster={mobilefallbackImage}
+
         ></video>
         {/*  Initial Loading Style for Welcome */}
         <div className={`${updateClass ? styles.removeInitialStyle: styles.heroLoadingStyle} absolute top-[32%] w-full `}>
