@@ -5,6 +5,7 @@
 }
 .researchCardStyle {
     box-shadow: 0 8px 12px 6px #00000014, 0 4px 4px #0000001f;
+    transition: box-shadow 0.5s ease-in-out;
 }
 .researchCardStyle:hover {
     /* border: 1px solid #D32F2F; */

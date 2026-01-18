@@ -22,6 +22,7 @@
     padding: 20px;
     margin-top: 16px;
     box-shadow: 0 8px 12px 6px rgba(0, 0, 0, .08), 0 4px 4px rgba(0, 0, 0, .12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .cardHeading {
     font-family: GothamHTFBook, Helvetica Neue, Helvetica, Arial, sans-serif;
