@@ -25,7 +25,7 @@ const Labels = {
     initialWelcomeHeading: "Welcome",
     initialWelcomePara: "The story of Somen Profile begins here.",
     heroStaticDesignation: "Software Engineer",
-    heroStaticType: "FrontEnd Developer",
+    heroStaticType: "Frontend Developer",
     heroStaticMessage: "A learner by heart and Software Engineer by Profession.",
     heroStaticMessage2: "Looking forward for an exciting role.",
 

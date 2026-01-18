@@ -81,6 +81,7 @@
 }
 .profileStyle {
     color: #D32F2F;
+    text-shadow: 1px 0px 1px #000;
 }
 @keyframes slideElementToTopVarient1 {
     0% {
