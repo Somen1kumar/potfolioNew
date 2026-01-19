@@ -58,25 +58,25 @@ export default function Home() {
       </>
       {
         <>
-          <section id="about" className="mt-9">
+          <section id="about" className="boxView mt-9">
             <About />
           </section>
-          <section id="work" className="mt-9">
+          <section id="work" className="boxView mt-9">
             <Experience />
           </section>
-          <section id="education" className="mt-9">
+          <section id="education" className="boxView mt-9">
             <Education />
           </section>
-          <section id="skills" className="mt-9">
+          <section id="skills" className="boxView mt-9">
             <Skills />
           </section>
-          <section id="projects" className="mt-9">
+          <section id="projects" className="boxView mt-9">
             <Projects />
           </section>
-          <section id="research" className="mt-9">
+          <section id="research" className="boxView mt-9">
             <Research />
           </section>
-          <section id="contact" className="mt-9">
+          <section id="contact" className="boxView mt-9">
             <Footer />
           </section>
         </>

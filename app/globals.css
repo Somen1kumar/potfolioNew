@@ -81,3 +81,22 @@ body {
 .slick-slide.slick-active:not(.slick-center) .slide {
   opacity: 0.7;
 }
+
+@media screen and (min-width: 330px) {
+  @supports (animation-timeline: scroll()) {
+    .boxView {
+      animation: scaleUp linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+    }
+  }
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+    
+  }
+}
