@@ -16,7 +16,7 @@ const AboutLabel = {
         languageLabel: "`JavaScript, TypeScript and C++, `",
         expertisePara: " built on rock-solid foundations in data structures, algorithms, and object-oriented programming.",
         expertiseNewLearning: "Generate AI solutions",
-        extraInfo: "🔬 Beyond coding, I'm passionate about learning {split}  and creating meaningful impact through technology — particularly in developing solutions for speech and hearing-impaired individuals through published research."
+        extraInfo: "🔬 Beyond coding, I'm passionate about learning {split}  and creating meaningful impact through technology — particularly in developing solutions for business transformation to digital."
     },
     cardOneProp2: {
         heading: "What I Do",

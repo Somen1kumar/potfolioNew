@@ -36,7 +36,7 @@ const SkillLabels = {
     {
       id: 116,
       skillHeading: "Software Design &,  Architecture",
-      languages: ["LLD", "HDD"],
+      languages: ["LLD", "HLD"],
     },
     {
       id: 117,
@@ -73,7 +73,7 @@ const SkillLabels = {
     {
       id: 146,
       skillHeading: "Software Design &,  Architecture",
-      languages: ["LLD", "HDD", "Design Patterns"],
+      languages: ["LLD", "HLD", "Design Patterns"],
     },
     {
       id: 147,

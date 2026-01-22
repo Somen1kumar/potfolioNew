@@ -82,6 +82,23 @@ const GlobalHeader: React.FC<PropsInterface> = (props: PropsInterface) => {
     return () => window.removeEventListener("resize", onResize);
   }, [open]);
 
+  const scrollToContainer =(containerId: string,isMobile: boolean, offset = 0) => {
+  const element = document.getElementById(containerId);
+  if (!element) return;
+
+  const elementPosition = element.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+  if(isMobile){
+    setOpen(false);
+    triggerBtnRef.current?.focus();
+  }
+}
+
   const items: {
     key: string;
     label: string;
@@ -125,16 +142,16 @@ const GlobalHeader: React.FC<PropsInterface> = (props: PropsInterface) => {
         >
           {items.map((item) => (
             <li key={item.key} className={item.key === activeSession ? styles.activeStyle : ""} role="none">
-              <a
+              <button
                 role="menuitem"
-                href={item.href}
                 aria-label={item.label}
                 className={styles.icon_btn}
                 title={item.label}
+                onClick={() => scrollToContainer(item.key,false, 0)}
               >
                 {item.icon}
                 <span className="sr-only">{item.label}</span>
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -168,17 +185,16 @@ const GlobalHeader: React.FC<PropsInterface> = (props: PropsInterface) => {
             <ul className={styles.overlay_list}>
               {items.map((item, idx) => (
                 <li key={item.key} className={item.key === activeSession ? styles.activeStyleMobile : ""}>
-                  <a
-                    ref={idx === 0 ? firstMenuItemRef : undefined}
+                  <button
                     className={styles.overlay_link}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
+                    onClick={() => scrollToContainer(item.key,true, 0)}
+
                   >
-                    <span className="overlay-icon" aria-hidden="true">
+                    <span ref={firstMenuItemRef}  className="overlay-icon" aria-hidden="true">
                       {item.icon}
                     </span>
                     {item.label}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
